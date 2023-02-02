@@ -29,3 +29,15 @@ for (let i = star; i < end; i++) {
         console.log(`число больше ${rnd}`);
     }
 }
+for (let i = star; i < end; i++) {
+    if (middle === rnd) {
+        console.log(rnd, `вы угадали`);
+        break
+    } else if (middle > rnd) {
+        end = middle
+        console.log(`число меньше ${rnd}`);
+    } else if (middle < rnd) {
+        start = middle
+        console.log(`число больше ${rnd}`);
+    }
+}
